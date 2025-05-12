@@ -30,7 +30,7 @@ export default function UnderConstruction() {
         </div>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a
-            href="https://discord.gg/sKtYqYK6Y8"
+            href="https://discord.gg/k6KssRNTZs"
             target="_blank"
             className="bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 flex gap-2 items-center"
           >

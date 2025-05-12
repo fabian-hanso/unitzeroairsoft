@@ -22,16 +22,24 @@ export default function HeroSwiper() {
     >
       <SwiperSlide className="relative w-full h-full">
         <img
-          src="/SliderImage.jpg"
+          src="/Marcel-1.jpg"
           alt="Slider"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
       </SwiperSlide>
       <SwiperSlide className="relative w-full h-full">
         <img
-          src="/SliderImage.jpg"
+          src="/Marcel-2.jpg"
           alt="Slider"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+        />
+      </SwiperSlide>
+
+      <SwiperSlide className="relative w-full h-full">
+        <img
+          src="/Marcel-3.jpg"
+          alt="Slider"
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
       </SwiperSlide>
     </Swiper>

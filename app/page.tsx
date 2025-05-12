@@ -6,7 +6,7 @@ import HeroSwiper from "@/components/HeroSwiper/HeroSwiper";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-gray-50">
       <HeroSwiper />
       {/* <LogoSlider /> */}
       {/* <Sponsoren /> */}

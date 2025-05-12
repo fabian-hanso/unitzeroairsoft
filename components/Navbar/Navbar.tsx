@@ -22,6 +22,7 @@ import {
   PhoneIcon,
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
+import Link from "next/link";
 
 const products = [
   {
@@ -33,7 +34,7 @@ const products = [
   {
     name: "Elite-Trupp",
     description: "Ein dedizierter und geführter Trupp",
-    href: "#",
+    href: "/elite",
     icon: ChartPieIcon,
   },
 ];
@@ -52,10 +53,10 @@ export default function Navbar() {
         className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Unit Zero Airsoft</span>
             <img alt="" src="/Logo.svg" className="h-16 w-auto" />
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button

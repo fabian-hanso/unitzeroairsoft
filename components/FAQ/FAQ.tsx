@@ -1,54 +1,48 @@
-import {
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-} from "@headlessui/react";
-import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
+import Section from "./Section/Section";
 
 const faqs = [
   {
-    question: "What's the best thing about Switzerland?",
+    question: "Wie kann ich Mitglied bei euch werden?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Melde dich gerne direkt via Discord oder per Instagram bei uns. Wir geben jedem Interessenten die Möglichkeit, sich über einige Spieltage hinweg zu beweisen.",
   },
-  // More questions...
+  {
+    question: "Wie viele Mitglieder habt ihr aktuell?",
+    answer:
+      "Derzeit zählen wir 15 aktive Mitglieder, wachsen jedoch bei fast jedem Spieltag weiter.",
+  },
+  {
+    question: "Was hat es mit der Unit Zero Elite auf sich?",
+    answer:
+      "Die Unit Zero Elite ist ein von uns gegründeter Trupp, welcher sich gerade im Aufbau befindet. Dieser Trupp wird durch einen Truppführer und seinen Stellvertreter geleitet. Gemeinsam werden Taktiken trainiert, Funksprüche optimiert und es wird rein Objektbezogen gespielt. Kein wildes Geballer & keine unklaren Spielverläufe.",
+  },
+  {
+    question: "Lorem ipsum dolor sit amet?",
+    answer:
+      "Derzeit zählen wir 15 aktive Mitglieder, wachsen jedoch bei fast jedem Spieltag weiter.",
+  },
+  {
+    question: "Dies ist ein einfaver Platzhalter?",
+    answer:
+      "Derzeit zählen wir 15 aktive Mitglieder, wachsen jedoch bei fast jedem Spieltag weiter.",
+  },
+  {
+    question: "Und noch ein weiterer Platzhalter?",
+    answer:
+      "Derzeit zählen wir 15 aktive Mitglieder, wachsen jedoch bei fast jedem Spieltag weiter.",
+  },
 ];
 
 export default function FAQ() {
   return (
-    <div className="bg-white">
+    <div className="bg-gray-50">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
         <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
           Häufig gestellte Fragen
         </h2>
         <dl className="mt-16 divide-y divide-gray-900/10">
           {faqs.map((faq) => (
-            <Disclosure
-              key={faq.question}
-              as="div"
-              className="py-6 first:pt-0 last:pb-0"
-            >
-              <dt>
-                <DisclosureButton className="group flex w-full items-start justify-between text-left text-gray-900">
-                  <span className="text-base/7 font-semibold">
-                    {faq.question}
-                  </span>
-                  <span className="ml-6 flex h-7 items-center">
-                    <PlusSmallIcon
-                      aria-hidden="true"
-                      className="size-6 group-data-[open]:hidden"
-                    />
-                    <MinusSmallIcon
-                      aria-hidden="true"
-                      className="size-6 group-[&:not([data-open])]:hidden"
-                    />
-                  </span>
-                </DisclosureButton>
-              </dt>
-              <DisclosurePanel as="dd" className="mt-2 pr-12">
-                <p className="text-base/7 text-gray-600">{faq.answer}</p>
-              </DisclosurePanel>
-            </Disclosure>
+            <Section faq={faq} key={faq.question} />
           ))}
         </dl>
       </div>
