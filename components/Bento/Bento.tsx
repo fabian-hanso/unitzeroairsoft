@@ -2,6 +2,7 @@ import {
   CalendarDaysIcon,
   CreditCardIcon,
   ChatBubbleLeftRightIcon,
+  CheckBadgeIcon,
 } from "@heroicons/react/24/outline";
 
 const features = [
@@ -20,11 +21,11 @@ const features = [
     icon: ChatBubbleLeftRightIcon,
   },
   {
-    name: "Extreme Rabatte",
+    name: "Rabatte bei Sponsoren",
     description:
       "Dank unserer Sponsoren haben unsere aktiven Mitglieder Zugriff auf tolle Rabatte auf fast alle Artikel im jeweiligen Sortiment.",
     href: "#",
-    icon: CreditCardIcon,
+    icon: CheckBadgeIcon,
   },
 ];
 
@@ -39,7 +40,7 @@ export default function Bento() {
           <p className="mt-6 text-lg/8 text-gray-600">
             Gemeinsam erreicht man mehr. Dies war der Leitspruch zur Gründung
             der <span className="font-bold text-stone-900">Unit Zero</span>.
-            Inzwischen zählen wir 15 aktive Mitglieder und wachsen stetig!
+            Inzwischen zählen wir 10 aktive Mitglieder und wachsen stetig!
           </p>
         </div>
       </div>

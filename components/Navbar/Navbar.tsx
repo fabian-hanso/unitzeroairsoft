@@ -16,12 +16,9 @@ import {
   Bars3Icon,
   ChartPieIcon,
   XMarkIcon,
+  AtSymbolIcon,
 } from "@heroicons/react/24/outline";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-} from "@heroicons/react/20/solid";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 
 const products = [
@@ -38,10 +35,6 @@ const products = [
     icon: ChartPieIcon,
   },
 ];
-const callsToAction = [
-  { name: "Discord", href: "#", icon: PlayCircleIcon },
-  { name: "Kontakt", href: "#", icon: PhoneIcon },
-];
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -50,7 +43,7 @@ export default function Navbar() {
     <header className="bg-white">
       <nav
         aria-label="Global"
-        className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between py-4 px-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
@@ -102,19 +95,25 @@ export default function Navbar() {
                 ))}
               </div>
               <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                {callsToAction.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
-                  >
-                    <item.icon
-                      aria-hidden="true"
-                      className="size-5 flex-none text-gray-400"
-                    />
-                    {item.name}
-                  </a>
-                ))}
+                <a
+                  href="https://discord.gg/k6KssRNTZs"
+                  target="_blank"
+                  className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
+                >
+                  <img src="/Discord.svg" className="w-5 h-5" />
+                  Discord
+                </a>
+                <a
+                  href="mailto:info@unit-zero.de"
+                  target="_blank"
+                  className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
+                >
+                  <AtSymbolIcon
+                    aria-hidden="true"
+                    className="size-5 text-blue"
+                  />
+                  E-Mail
+                </a>
               </div>
             </PopoverPanel>
           </Popover>
@@ -126,7 +125,7 @@ export default function Navbar() {
             Sponsoren
           </a>
           <a href="#" className="text-sm/6 text-gray-900">
-            Allgemines
+            Allgemeines
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -144,7 +143,7 @@ export default function Navbar() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-4 py-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Unit Zero Airsoft</span>
@@ -204,10 +203,11 @@ export default function Navbar() {
               </div>
               <div className="py-6 flex flex-col gap-4">
                 <a
-                  href="#"
+                  href="https://discord.gg/k6KssRNTZs"
+                  target="_blank"
                   className="px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 flex gap-3 bg-gray/5 justify-center items-center"
                 >
-                  <img src="/Discord.svg" className="w-8 h-auto" /> Discord
+                  <img src="/Discord.svg" className="w-6 h-auto" /> Discord
                 </a>
               </div>
             </div>

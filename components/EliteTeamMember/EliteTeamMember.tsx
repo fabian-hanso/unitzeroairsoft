@@ -5,13 +5,7 @@ import {
 
 const people = [
   {
-    name: "Elite - Pascal",
-    role: "Sturmsoldat",
-    imageUrl: "/Fabian.jpg",
-    weapon: "MTW Billet Tactical Gen.3",
-  },
-  {
-    name: "Elite - Siamak",
+    name: "Elite - CASH",
     role: "Kundschafter",
     imageUrl: "/Sia.jpg",
     weapon: "MTW Billet Tactical Gen.3",
@@ -23,7 +17,7 @@ const people = [
     weapon: "MTW Billet Tactical Gen.3",
   },
   {
-    name: "Elite - Marcel",
+    name: "Elite - BROSKI",
     role: "Tactical Lead",
     imageUrl: "/Marcel-3.jpg",
     weapon: "MTW Billet Tactical Gen.3",
@@ -49,14 +43,14 @@ export default function EliteTeamMember() {
         >
           {people.map((person) => (
             <div
-              className="relative w-full h-[450px] overflow-hidden"
+              className="relative w-full h-[450px] overflow-hidden group border border-white hover:border-accent"
               key={person.name}
             >
               <img
                 src={person.imageUrl}
                 className="w-full h-full object-cover"
               />
-              <div className="bg-gradient-to-b from-transparent to-gray absolute top-0 right-0 left-0 bottom-0">
+              <div className="bg-gradient-to-b from-gray/10 to-gray absolute top-0 right-0 left-0 bottom-0 group-hover:from-gray/50 transition-all group-hover:">
                 <div className="p-6 flex flex-col justify-between h-full">
                   <div className="bg-gray text-white py-2 px-3 w-fit text-xs flex flex-row gap-2">
                     <ChevronDoubleUpIcon className="w-4 h-4 text-accent" />
