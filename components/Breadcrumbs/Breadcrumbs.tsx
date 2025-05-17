@@ -13,7 +13,7 @@ export default function Breadcrumbs({ items }: any) {
             </a>
           </div>
         </li>
-        {items.map((item) => (
+        {items.map((item: any) => (
           <li key={item.name}>
             <div className="flex items-center">
               <ChevronRightIcon
