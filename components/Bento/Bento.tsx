@@ -1,6 +1,5 @@
 import {
   CalendarDaysIcon,
-  CreditCardIcon,
   ChatBubbleLeftRightIcon,
   CheckBadgeIcon,
 } from "@heroicons/react/24/outline";

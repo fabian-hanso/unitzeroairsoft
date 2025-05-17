@@ -1,11 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 
-const pages = [
-  { name: "Events", href: "#", current: false },
-  { name: "Neues Event", href: "#", current: true },
-];
-
 export default function Breadcrumbs({ items }: any) {
   return (
     <nav aria-label="Breadcrumb" className="flex">
