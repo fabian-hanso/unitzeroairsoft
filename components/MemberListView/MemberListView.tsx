@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-ignore
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
@@ -9,14 +11,13 @@ import {
   EnvelopeOpenIcon,
 } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
-import { Timestamp } from "firebase-admin/firestore";
 
 export type User = {
   firstName: string;
   lastName: string;
   location: string;
   alias: string;
-  birthday: Timestamp; // <-- Hier
+  birthday: any;
   phone: string;
   eMail: string;
 };
