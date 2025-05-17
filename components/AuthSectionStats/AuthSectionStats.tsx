@@ -42,7 +42,7 @@ function classNames(...classes: any) {
 
 export default function AuthSectionStats() {
   return (
-    <div className="mt-10">
+    <div className="mt-5">
       <h3 className="text-base font-semibold text-gray-900">
         Aktuelle Zahlen im Überblick
       </h3>
@@ -51,7 +51,7 @@ export default function AuthSectionStats() {
         {stats.map((item) => (
           <div
             key={item.id}
-            className="relative overflow-hidden rounded-lg bg-white px-4 pb-12 pt-5 shadow sm:px-6 sm:pt-6"
+            className="relative overflow-hidden bg-white px-4 pb-12 pt-5 shadow sm:px-6 sm:pt-6"
           >
             <dt>
               <div className="absolute rounded-md bg-blue p-3">

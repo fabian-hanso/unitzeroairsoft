@@ -28,7 +28,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const construction: boolean = true;
+  const construction: boolean = false;
   const pathname = usePathname();
   const hideHeaderFooter =
     pathname.startsWith("/login") || pathname.startsWith("/dashboard");
