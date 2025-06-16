@@ -23,7 +23,7 @@ export default function HeroSwiper() {
     >
       <SwiperSlide className="relative w-full h-full">
         <img
-          src="/AreaMExtreme-20.jpg"
+          src="/Sia-Nice.jpg"
           alt="Slider"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
