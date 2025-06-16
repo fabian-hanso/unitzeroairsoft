@@ -10,13 +10,13 @@ type PageProps = {
   };
 };
 
-export default async function BlogDetailPage({ params }: PageProps) {
-  const { slug } = params;
+export default async function BlogDetailPage({ params }: any) {
+  const { slug }: any = params;
   const post = await fetchPostBySlug(slug);
   if (!post) return notFound();
 
   const { headline, content, image, category }: any = post.fields;
-  const { createdAt } = post.sys;
+  const { createdAt }: any = post.sys;
 
   return (
     <div className="bg-gray-50 py-20">
