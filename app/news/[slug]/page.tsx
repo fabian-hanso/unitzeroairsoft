@@ -7,6 +7,7 @@ import { formatDate } from "@/helper/dateFormatter";
 export default async function BlogDetailPage(props: {
   params: { slug: string };
 }) {
+  // ✅ await entfernt
   const { slug } = props.params;
 
   const post = await fetchPostBySlug(slug);
