@@ -5,20 +5,20 @@ import {
 
 const people = [
   {
-    name: "Elite - CASH",
-    role: "Kundschafter",
+    name: "Elite - BABA",
+    role: "Späher",
     imageUrl: "/Sia.jpg",
-    weapon: "MTW Billet Tactical Gen.3",
+    weapon: "MTW .308",
   },
   {
     name: "Elite - AMEX",
-    role: "Elite-Lead / Sturmsoldat",
+    role: "Elite-Lead",
     imageUrl: "/Fabian.jpg",
     weapon: "MTW Billet Tactical Gen.3",
   },
   {
-    name: "Elite - BROSKI",
-    role: "Tactical Lead",
+    name: "Elite - HILDEGUARD",
+    role: "Elite-Lead / Techniker",
     imageUrl: "/Marcel-3.jpg",
     weapon: "MTW Billet Tactical Gen.3",
   },

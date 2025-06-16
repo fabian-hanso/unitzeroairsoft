@@ -8,6 +8,7 @@ import {
   Autoplay,
 } from "swiper/modules";
 import "swiper/css";
+import { ChevronDoubleDownIcon } from "@heroicons/react/24/outline";
 
 export default function HeroSwiper() {
   return (
@@ -17,12 +18,12 @@ export default function HeroSwiper() {
       slidesPerView={1}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
-      className="w-full lg:h-[800px] h-96"
+      className="w-full lg:h-[800px] h-96 relative"
       autoplay
     >
       <SwiperSlide className="relative w-full h-full">
         <img
-          src="/Marcel-1.jpg"
+          src="/AreaMExtreme-20.jpg"
           alt="Slider"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
@@ -42,6 +43,9 @@ export default function HeroSwiper() {
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
       </SwiperSlide>
+      <div className="absolute bottom-6 left-1/2 translateY-1/2 z-10">
+        <ChevronDoubleDownIcon className="w-8 h-8 text-white animate-bounce duration-300" />
+      </div>
     </Swiper>
   );
 }

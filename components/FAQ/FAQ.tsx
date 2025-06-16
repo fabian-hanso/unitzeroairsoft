@@ -4,12 +4,12 @@ const faqs = [
   {
     question: "Wie kann ich Mitglied bei euch werden?",
     answer:
-      "Melde dich gerne direkt via Discord oder per Instagram bei uns. Wir geben jedem Interessenten die Möglichkeit, sich über einige Spieltage hinweg zu beweisen.",
+      "Melde dich gerne direkt via Discord oder per Instagram bei uns. Wir geben jedem Interessenten die Möglichkeit, sich über einige Spieltage hinweg zu beweisen und ein Teil der Gemeinschaft zu werden.",
   },
   {
     question: "Wie viele Mitglieder habt ihr aktuell?",
     answer:
-      "Derzeit zählen wir 15 aktive Mitglieder, wachsen jedoch bei fast jedem Spieltag weiter.",
+      "Derzeit zählen wir 12 aktive Mitglieder, wachsen jedoch bei fast jedem Spieltag weiter.",
   },
   {
     question: "Was hat es mit der Unit Zero Elite auf sich?",
@@ -17,19 +17,9 @@ const faqs = [
       "Die Unit Zero Elite ist ein von uns gegründeter Trupp, welcher sich gerade im Aufbau befindet. Dieser Trupp wird durch einen Truppführer und seinen Stellvertreter geleitet. Gemeinsam werden Taktiken trainiert, Funksprüche optimiert und es wird rein Objektbezogen gespielt. Kein wildes Geballer & keine unklaren Spielverläufe.",
   },
   {
-    question: "Lorem ipsum dolor sit amet?",
+    question: "Auf welchen Spielfeldern seid ihr regelmäßig vertreten?",
     answer:
-      "Derzeit zählen wir 15 aktive Mitglieder, wachsen jedoch bei fast jedem Spieltag weiter.",
-  },
-  {
-    question: "Dies ist ein einfaver Platzhalter?",
-    answer:
-      "Derzeit zählen wir 15 aktive Mitglieder, wachsen jedoch bei fast jedem Spieltag weiter.",
-  },
-  {
-    question: "Und noch ein weiterer Platzhalter?",
-    answer:
-      "Derzeit zählen wir 15 aktive Mitglieder, wachsen jedoch bei fast jedem Spieltag weiter.",
+      "Du findest uns regelmäßig (mindestens alle 14 Tage) auf der Area M in Koblenz, allerdings versuchen wir auch Abwechslung in die Spieltage zu bringen, indem wir Felder wie Weeze, Venlo, uvm. besuchen. Im Winter findet man uns außerdem hin und wieder in nahegelegenen Hallen.",
   },
 ];
 

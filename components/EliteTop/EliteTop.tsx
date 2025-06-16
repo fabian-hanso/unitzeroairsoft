@@ -35,7 +35,7 @@ export default function EliteTop() {
                 src="/Marcel-1.jpg"
                 className="aspect-[3/2] w-full object-cover object-top"
               />
-              <p className="mt-8  text-gray-500">
+              <p className="mt-8  text-gray-600">
                 Jeder Operator verfügt über eine klar definierte Rolle, die er
                 bereits beim Beitritt in den Elite-Trupp wählt und dann auch
                 behält.

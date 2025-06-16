@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 "use client";
 
 import { Geist, Geist_Mono } from "next/font/google";
@@ -28,7 +29,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const construction: boolean = true;
+  const construction: boolean = false;
   const pathname = usePathname();
   const hideHeaderFooter =
     pathname.startsWith("/login") || pathname.startsWith("/dashboard");

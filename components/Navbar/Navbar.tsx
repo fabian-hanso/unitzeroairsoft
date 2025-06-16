@@ -14,7 +14,6 @@ import {
 } from "@headlessui/react";
 import {
   Bars3Icon,
-  ChartPieIcon,
   XMarkIcon,
   AtSymbolIcon,
 } from "@heroicons/react/24/outline";
@@ -23,16 +22,14 @@ import Link from "next/link";
 
 const products = [
   {
-    name: "Airsoftteam",
+    name: "Unit Zero",
     description: "Die generelle Gemeinschaft",
-    href: "#",
-    icon: ChartPieIcon,
+    href: "/",
   },
   {
     name: "Elite-Trupp",
     description: "Ein dedizierter und geführter Trupp",
     href: "/elite",
-    icon: ChartPieIcon,
   },
 ];
 
@@ -63,7 +60,7 @@ export default function Navbar() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 text-gray-900">
+            <PopoverButton className="flex items-center gap-x-1 text-sm/6 text-gray-900 cursor-pointer focus:outline-none">
               Über uns
               <ChevronDownIcon
                 aria-hidden="true"
@@ -118,19 +115,20 @@ export default function Navbar() {
             </PopoverPanel>
           </Popover>
 
-          <a href="#" className="text-sm/6 text-gray-900">
+          <a href="/mitglieder" className="text-sm/6 text-gray-900">
             Mitglieder
           </a>
-          <a href="#" className="text-sm/6 text-gray-900">
+          {/* <a href="#" className="text-sm/6 text-gray-900">
             Sponsoren
-          </a>
-          <a href="#" className="text-sm/6 text-gray-900">
-            Allgemeines
+          </a> */}
+          <a href="/news" className="text-sm/6 text-gray-900">
+            News
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
-            href="#"
+            href="https://discord.gg/k6KssRNTZs"
+            target="_blank"
             className="text-sm/6 font-semibold text-gray-900 flex gap-3"
           >
             <img src="/Discord.svg" className="w-8 h-auto" />
@@ -183,22 +181,28 @@ export default function Navbar() {
                   </DisclosurePanel>
                 </Disclosure>
                 <a
-                  href="#"
+                  href="/mitglieder"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Mitglieder
                 </a>
-                <a
+                {/* <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Sponsoren
-                </a>
+                </a> */}
                 <a
-                  href="#"
+                  href="/news"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Allgemeines
+                  News
+                </a>
+                <a
+                  href="/impressum"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  Impressum
                 </a>
               </div>
               <div className="py-6 flex flex-col gap-4">

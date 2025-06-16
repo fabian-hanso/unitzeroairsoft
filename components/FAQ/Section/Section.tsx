@@ -12,7 +12,7 @@ function Section({ faq }: any) {
     <div key={faq.question} className="py-6 first:pt-0 last:pb-0">
       <button
         onClick={() => setOpen(!open)}
-        className="group flex w-full items-start justify-between text-left text-gray-900"
+        className="group flex w-full items-start justify-between text-left text-gray-900 cursor-pointer"
       >
         <span
           className={

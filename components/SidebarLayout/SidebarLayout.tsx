@@ -15,13 +15,17 @@ import {
   TransitionChild,
 } from "@headlessui/react";
 import {
+  ArrowDownTrayIcon,
   BanknotesIcon,
   Bars3Icon,
   BellIcon,
+  CalendarDaysIcon,
   CalendarIcon,
   Cog6ToothIcon,
   DocumentDuplicateIcon,
   HomeIcon,
+  PercentBadgeIcon,
+  TagIcon,
   UsersIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
@@ -41,17 +45,27 @@ const navigation = [
   {
     name: "Events",
     href: "/dashboard/events",
-    icon: CalendarIcon,
-  },
-  {
-    name: "Mitglieder",
-    href: "/dashboard/mitglieder",
-    icon: DocumentDuplicateIcon,
+    icon: CalendarDaysIcon,
   },
   {
     name: "Teamkasse",
     href: "/dashboard/teamkasse",
     icon: BanknotesIcon,
+  },
+  {
+    name: "Merchandise",
+    href: "/dashboard/merchandise",
+    icon: TagIcon,
+  },
+  {
+    name: "Kleinanzeigen",
+    href: "/dashboard/kleinanzeigen",
+    icon: PercentBadgeIcon,
+  },
+  {
+    name: "Downloads",
+    href: "/dashboard/downloads",
+    icon: ArrowDownTrayIcon,
   },
 ];
 const teams = [

@@ -1,6 +1,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { ChevronRightIcon, HomeIcon } from "@heroicons/react/20/solid";
 
+export type BreadcrumbItem = {
+  name: string;
+  href: string;
+};
+
+export type BreadcrumbItems = {
+  items: [BreadcrumbItem];
+};
+
 export default function Breadcrumbs({ items }: any) {
   return (
     <nav aria-label="Breadcrumb" className="flex">
@@ -22,7 +31,6 @@ export default function Breadcrumbs({ items }: any) {
               />
               <a
                 href={item.href}
-                aria-current={item.current ? "page" : undefined}
                 className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700"
               >
                 {item.name}
