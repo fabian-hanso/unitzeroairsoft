@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { fetchPostBySlug } from "@/lib/contentful";
 import { notFound } from "next/navigation";
