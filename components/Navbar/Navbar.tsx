@@ -79,13 +79,13 @@ export default function Navbar() {
                     className="group relative flex items-center gap-x-6 p-4 text-sm/6 hover:bg-gray-50"
                   >
                     <div className="flex-auto">
-                      <a
+                      <Link
                         href={item.href}
                         className="block font-semibold text-gray-900"
                       >
                         {item.name}
                         <span className="absolute inset-0" />
-                      </a>
+                      </Link>
                       <p className="mt-1 text-gray-600">{item.description}</p>
                     </div>
                   </div>
@@ -115,15 +115,15 @@ export default function Navbar() {
             </PopoverPanel>
           </Popover>
 
-          <a href="/mitglieder" className="text-sm/6 text-gray-900">
+          <Link href="/mitglieder" className="text-sm/6 text-gray-900">
             Mitglieder
-          </a>
+          </Link>
           {/* <a href="#" className="text-sm/6 text-gray-900">
             Sponsoren
           </a> */}
-          <a href="/news" className="text-sm/6 text-gray-900">
+          <Link href="/news" className="text-sm/6 text-gray-900">
             News
-          </a>
+          </Link>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
@@ -143,10 +143,10 @@ export default function Navbar() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Unit Zero Airsoft</span>
               <img alt="" src="/Logo.svg" className="h-16 w-auto" />
-            </a>
+            </Link>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
@@ -180,30 +180,30 @@ export default function Navbar() {
                     ))}
                   </DisclosurePanel>
                 </Disclosure>
-                <a
+                <Link
                   href="/mitglieder"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Mitglieder
-                </a>
+                </Link>
                 {/* <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Sponsoren
                 </a> */}
-                <a
+                <Link
                   href="/news"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   News
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/impressum"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Impressum
-                </a>
+                </Link>
               </div>
               <div className="py-6 flex flex-col gap-4">
                 <a
