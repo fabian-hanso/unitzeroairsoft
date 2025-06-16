@@ -4,12 +4,14 @@ import { notFound } from "next/navigation";
 import BlogContent from "@/components/BlogContent/BlogContent";
 import { formatDate } from "@/helper/dateFormatter";
 
-export default async function BlogDetailPage(props: {
-  params: { slug: string };
-}) {
-  // ✅ await entfernt
-  const { slug } = props.params;
+type PageProps = {
+  params: {
+    slug: string;
+  };
+};
 
+export default async function BlogDetailPage({ params }: PageProps) {
+  const { slug } = params;
   const post = await fetchPostBySlug(slug);
   if (!post) return notFound();
 
