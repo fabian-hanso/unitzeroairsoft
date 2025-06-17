@@ -6,7 +6,7 @@ import Image from "next/image";
 export const richTextOptions = {
   renderMark: {
     [MARKS.BOLD]: (text: any) => (
-      <strong className="font-semibold text-blue">{text}</strong>
+      <strong className="font-semibold text-gray">{text}</strong>
     ),
     [MARKS.ITALIC]: (text: any) => <em className="italic">{text}</em>,
   },
@@ -27,13 +27,13 @@ export const richTextOptions = {
       <ul className="pl-4">{children}</ul>
     ),
     [BLOCKS.LIST_ITEM]: (node: any, children: any) => (
-      <li className="list-disc text-blue">{children}</li>
+      <li className="list-disc text-gray">{children}</li>
     ),
     [BLOCKS.OL_LIST]: (node: any, children: any) => (
       <ol className="list-decimal list-inside pl-4 space-y-2">{children}</ol>
     ),
     [BLOCKS.QUOTE]: (node: any, children: any) => (
-      <blockquote className="border-l-2 border-blue pl-4 italic text-gray-600 my-6">
+      <blockquote className="border-l-2 border-gray pl-4 italic text-gray-600 my-6">
         {children}
       </blockquote>
     ),
