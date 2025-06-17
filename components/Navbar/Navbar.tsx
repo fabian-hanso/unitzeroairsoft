@@ -182,6 +182,7 @@ export default function Navbar() {
                 </Disclosure>
                 <Link
                   href="/mitglieder"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Mitglieder
@@ -194,6 +195,7 @@ export default function Navbar() {
                 </a> */}
                 <Link
                   href="/news"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   News
@@ -201,6 +203,7 @@ export default function Navbar() {
                 <Link
                   href="/impressum"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Impressum
                 </Link>
