@@ -25,7 +25,7 @@ const people = [
   },
   {
     name: "PETER",
-    role: "Initiate",
+    role: "Operator",
     imageUrl: "/Peter-Profil.jpg",
     weapon: "SSR4 MK2",
   },
@@ -37,7 +37,7 @@ const people = [
   },
   {
     name: "ANDRE",
-    role: "Initiate",
+    role: "Operator",
     imageUrl: "/Andre-Profil.jpg",
     weapon: "JG MOD5 GEN.2 (Begadi, MP5)",
   },

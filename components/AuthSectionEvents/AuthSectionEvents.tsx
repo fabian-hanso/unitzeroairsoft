@@ -105,6 +105,12 @@ export default function AuthSectionEvents() {
   //   fetchEvents();
   // }, [respondToEvent]);
 
+  if (loading)
+    return (
+      <div className="w-8 h-8 border-4 border-blue border-t-transparent rounded-full animate-spin mt-10"></div>
+    );
+  if (error) return <p>Leider hat das nicht funktioniert!</p>;
+
   return (
     <div className="mt-5">
       <h3 className="text-base font-semibold text-gray-900">Kommende Events</h3>
