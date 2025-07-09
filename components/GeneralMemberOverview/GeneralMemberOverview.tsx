@@ -54,6 +54,24 @@ const people = [
     weapon: "Wird noch gepflegt",
   },
   {
+    name: "SEBASTIAN",
+    role: "Initiate",
+    imageUrl: "/Placeholder.webp",
+    weapon: "Wird noch gepflegt",
+  },
+  {
+    name: "PASCAL",
+    role: "Initiate",
+    imageUrl: "/Placeholder.webp",
+    weapon: "Wird noch gepflegt",
+  },
+  {
+    name: "PATRICK",
+    role: "Initiate",
+    imageUrl: "/Placeholder.webp",
+    weapon: "Wird noch gepflegt",
+  },
+  {
     name: "SVEN",
     role: "Initiate",
     imageUrl: "/Placeholder.webp",
@@ -61,6 +79,12 @@ const people = [
   },
   {
     name: "MARTIN",
+    role: "Initiate",
+    imageUrl: "/Placeholder.webp",
+    weapon: "Wird noch gepflegt",
+  },
+  {
+    name: "OTTI",
     role: "Initiate",
     imageUrl: "/Placeholder.webp",
     weapon: "Wird noch gepflegt",
