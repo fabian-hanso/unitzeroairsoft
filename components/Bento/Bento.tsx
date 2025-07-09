@@ -39,7 +39,7 @@ export default function Bento() {
           <p className="mt-6 text-lg/8 text-gray-600">
             Gemeinsam erreicht man mehr. Dies war der Leitspruch zur Gründung
             der <span className="font-bold text-stone-900">Unit Zero</span>.
-            Inzwischen zählen wir 12 aktive Mitglieder und wachsen stetig!
+            Inzwischen zählen wir 16 aktive Mitglieder und wachsen stetig!
           </p>
         </div>
       </div>

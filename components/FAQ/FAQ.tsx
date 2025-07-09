@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "Wie viele Mitglieder habt ihr aktuell?",
     answer:
-      "Derzeit zählen wir 12 aktive Mitglieder, wachsen jedoch bei fast jedem Spieltag weiter.",
+      "Derzeit zählen wir 16 aktive Mitglieder, wachsen jedoch bei fast jedem Spieltag weiter.",
   },
   {
     question: "Was hat es mit der Unit Zero Elite auf sich?",

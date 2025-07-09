@@ -26,7 +26,7 @@ const people = [
   {
     name: "PETER",
     role: "Operator",
-    imageUrl: "/Peter-Profil.jpg",
+    imageUrl: "/Peter-AreaM.jpg",
     weapon: "SSR4 MK2",
   },
   {
@@ -49,6 +49,12 @@ const people = [
   },
   {
     name: "STEFFEN",
+    role: "Initiate",
+    imageUrl: "/Placeholder.webp",
+    weapon: "Wird noch gepflegt",
+  },
+  {
+    name: "SVEN",
     role: "Initiate",
     imageUrl: "/Placeholder.webp",
     weapon: "Wird noch gepflegt",
