@@ -1,8 +1,10 @@
+import { fetchEntries } from "@/lib/contentful";
 import {
   ChevronDoubleUpIcon,
   Cog6ToothIcon,
   PlusCircleIcon,
 } from "@heroicons/react/24/outline";
+import { colgroup } from "motion/react-client";
 
 const people = [
   {
@@ -26,7 +28,7 @@ const people = [
   {
     name: "PETER",
     role: "Operator",
-    imageUrl: "/Peter-AreaM.jpg",
+    imageUrl: "/Peter-Profil.jpg",
     weapon: "SSR4 MK2",
   },
   {
@@ -42,7 +44,49 @@ const people = [
     weapon: "JG MOD5 GEN.2 (Begadi, MP5)",
   },
   {
-    name: "JUSTIN",
+    name: "JAN OLIVER",
+    role: "Initiate",
+    imageUrl: "/JanOliver-Profil.jpg",
+    weapon: "Wird noch gepflegt",
+  },
+  {
+    name: "PASCAL",
+    role: "Initiate",
+    imageUrl: "/Pascal-Profil.jpg",
+    weapon: "Wird noch gepflegt",
+  },
+  {
+    name: "SVEN",
+    role: "Initiate",
+    imageUrl: "/Sven-Profil.jpg",
+    weapon: "Wird noch gepflegt",
+  },
+  {
+    name: "OTTI",
+    role: "Initiate",
+    imageUrl: "/Otti-Profil.jpg",
+    weapon: "Wird noch gepflegt",
+  },
+  {
+    name: "RUBEN",
+    role: "Initiate",
+    imageUrl: "/Ruben-Profil.jpg",
+    weapon: "Wird noch gepflegt",
+  },
+  {
+    name: "VALERII",
+    role: "Operator",
+    imageUrl: "/Valerij-Profil.jpg",
+    weapon: "Wird noch gepflegt",
+  },
+  {
+    name: "MARTIN",
+    role: "Initiate",
+    imageUrl: "/Placeholder.webp",
+    weapon: "Wird noch gepflegt",
+  },
+  {
+    name: "PATRICK",
     role: "Initiate",
     imageUrl: "/Placeholder.webp",
     weapon: "Wird noch gepflegt",
@@ -60,45 +104,19 @@ const people = [
     weapon: "Wird noch gepflegt",
   },
   {
-    name: "PASCAL",
+    name: "JUSTIN",
     role: "Initiate",
-    imageUrl: "/Placeholder.webp",
-    weapon: "Wird noch gepflegt",
-  },
-  {
-    name: "PATRICK",
-    role: "Initiate",
-    imageUrl: "/Placeholder.webp",
-    weapon: "Wird noch gepflegt",
-  },
-  {
-    name: "SVEN",
-    role: "Initiate",
-    imageUrl: "/Placeholder.webp",
-    weapon: "Wird noch gepflegt",
-  },
-  {
-    name: "MARTIN",
-    role: "Initiate",
-    imageUrl: "/Placeholder.webp",
-    weapon: "Wird noch gepflegt",
-  },
-  {
-    name: "OTTI",
-    role: "Initiate",
-    imageUrl: "/Placeholder.webp",
-    weapon: "Wird noch gepflegt",
-  },
-  {
-    name: "VALERIJ",
-    role: "Operator",
     imageUrl: "/Placeholder.webp",
     weapon: "Wird noch gepflegt",
   },
   // More people...
 ];
 
-export default function GeneralMemberOverview() {
+export default async function GeneralMemberOverview() {
+  const members = await fetchEntries("mitglieder");
+
+  console.log(members);
+
   return (
     <div className="bg-gray-50 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

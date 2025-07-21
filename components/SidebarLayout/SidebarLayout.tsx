@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { getAuth, signOut } from "firebase/auth";
 import {
   Dialog,
@@ -28,9 +28,12 @@ import {
   TagIcon,
   UsersIcon,
   XMarkIcon,
+  ArrowRightStartOnRectangleIcon,
+  RocketLaunchIcon,
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 interface UserData {
   firstName: string;
@@ -411,10 +414,20 @@ export default function SidebarLayout({ userData, children }: any) {
                     className="absolute right-0 z-10 mt-2.5 w-32 origin-top-right bg-white py-2 shadow-lg ring-1 ring-gray-900/5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
                   >
                     <MenuItem>
+                      <Link
+                        href="/dashboard/profil"
+                        className="px-3 py-1 text-sm/6 text-gray-900 data-[focus]:bg-gray-50 data-[focus]:outline-none w-full text-left flex gap-2 items-center"
+                      >
+                        <RocketLaunchIcon className="w-4 h-4" />
+                        Profil
+                      </Link>
+                    </MenuItem>
+                    <MenuItem>
                       <button
                         onClick={handleLogout}
-                        className="block px-3 py-1 text-sm/6 text-gray-900 data-[focus]:bg-gray-50 data-[focus]:outline-none w-full"
+                        className="px-3 py-1 text-sm/6 text-gray-900 data-[focus]:bg-gray-50 data-[focus]:outline-none w-full text-left flex gap-2 items-center"
                       >
+                        <ArrowRightStartOnRectangleIcon className="w-4 h-4" />
                         Abmelden
                       </button>
                     </MenuItem>
