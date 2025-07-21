@@ -46,7 +46,7 @@ const people = [
     name: "JAN OLIVER",
     role: "Initiate",
     imageUrl: "/JanOliver-Profil.jpg",
-    weapon: "Wird noch gepflegt",
+    weapon: "PHYLAX HPO",
   },
   {
     name: "PASCAL",
