@@ -31,7 +31,7 @@ const people = [
     weapon: "SSR4 MK2",
   },
   {
-    name: "TIMO",
+    name: "GHOST - TIMO",
     role: "Operator",
     imageUrl: "/Timo-Profil-1.jpg",
     weapon: "Wird noch gepflegt",
@@ -79,6 +79,12 @@ const people = [
     weapon: "Wird noch gepflegt",
   },
   {
+    name: "STEFFEN",
+    role: "Initiate",
+    imageUrl: "/Steffen-Profil.jpg",
+    weapon: "Wird noch gepflegt",
+  },
+  {
     name: "MARTIN",
     role: "Initiate",
     imageUrl: "/Placeholder.webp",
@@ -86,12 +92,6 @@ const people = [
   },
   {
     name: "PATRICK",
-    role: "Initiate",
-    imageUrl: "/Placeholder.webp",
-    weapon: "Wird noch gepflegt",
-  },
-  {
-    name: "STEFFEN",
     role: "Initiate",
     imageUrl: "/Placeholder.webp",
     weapon: "Wird noch gepflegt",
