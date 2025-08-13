@@ -85,6 +85,12 @@ const people = [
     weapon: "Wird noch gepflegt",
   },
   {
+    name: "Carsten",
+    role: "Initiate",
+    imageUrl: "/Placeholder.webp",
+    weapon: "Vorsk VMP-2M",
+  },
+  {
     name: "MARTIN",
     role: "Initiate",
     imageUrl: "/Placeholder.webp",

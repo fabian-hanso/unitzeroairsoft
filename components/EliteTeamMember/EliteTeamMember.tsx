@@ -12,13 +12,13 @@ const people = [
   },
   {
     name: "Elite - AMEX",
-    role: "Elite-Lead",
+    role: "Angriff Lead",
     imageUrl: "/Fabian.jpg",
     weapon: "MTW Billet Tactical Gen.3",
   },
   {
     name: "Elite - HILDEGUARD",
-    role: "Elite-Lead / Techniker",
+    role: "Support Lead",
     imageUrl: "/Marcel-3.jpg",
     weapon: "MTW Billet Tactical Gen.3",
   },
