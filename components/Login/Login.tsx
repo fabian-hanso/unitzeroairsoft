@@ -1,12 +1,8 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { auth } from "@/lib/firebase";
-import { signInWithEmailAndPassword } from "firebase/auth";
 
 export default function Login() {
-  const router = useRouter();
   const [eMail, setEMail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [loading, setLoading] = useState(false);
@@ -14,35 +10,6 @@ export default function Login() {
   const login = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-
-    try {
-      // 1️⃣ Firebase Login
-      const userCredential = await signInWithEmailAndPassword(
-        auth,
-        eMail,
-        password
-      );
-      const idToken = await userCredential.user.getIdToken();
-
-      // 2️⃣ Session-Cookie setzen via API
-      const response = await fetch("/api/sessionLogin", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ idToken }),
-      });
-
-      if (!response.ok) {
-        throw new Error("Session Login fehlgeschlagen");
-      }
-
-      // 3️⃣ Weiterleitung auf Dashboard
-      router.push("/dashboard");
-    } catch (err: any) {
-      console.error(err);
-      alert(err.message || "Login fehlgeschlagen");
-    } finally {
-      setLoading(false);
-    }
   };
 
   return (
