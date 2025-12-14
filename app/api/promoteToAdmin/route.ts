@@ -1,7 +1,8 @@
 // import { NextRequest, NextResponse } from "next/server";
 // import { getApps, initializeApp, cert } from "firebase-admin/app";
-// import { getFirestore, FieldValue } from "firebase-admin/firestore";
+// import admin from "firebase-admin";
 
+// // Firebase Admin SDK initialisieren (falls noch nicht geschehen)
 // if (!getApps().length) {
 //   initializeApp({
 //     credential: cert({
@@ -14,35 +15,49 @@
 //   });
 // }
 
-// const db = getFirestore();
-
-// export async function PATCH(req: NextRequest) {
+// export async function POST(req: NextRequest) {
 //   try {
-//     const { eventId, userId, type } = await req.json();
+//     const body = await req.json();
+//     const { eMail } = body;
 
-//     if (!eventId || !userId || !["attend", "decline"].includes(type)) {
-//       return NextResponse.json({ error: "Ungültige Anfrage" }, { status: 400 });
+//     if (!eMail) {
+//       return NextResponse.json(
+//         { message: "eMail is required" },
+//         { status: 400 }
+//       );
 //     }
 
-//     const eventRef = db.doc(`events/${eventId}`);
-
-//     if (type === "attend") {
-//       await eventRef.update({
-//         participents: FieldValue.arrayUnion(userId),
-//         declines: FieldValue.arrayRemove(userId),
-//       });
-//     } else {
-//       await eventRef.update({
-//         declines: FieldValue.arrayUnion(userId),
-//         participents: FieldValue.arrayRemove(userId),
-//       });
+//     // Admin-Check: Firebase ID Token aus Header
+//     const authHeader = req.headers.get("Authorization");
+//     if (!authHeader?.startsWith("Bearer ")) {
+//       return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
 //     }
 
-//     return NextResponse.json({ status: type, eventId, userId });
-//   } catch (error) {
-//     console.error("API Fehler in respondToEvent:", error);
+//     const idToken = authHeader.split("Bearer ")[1];
+//     const decodedToken = await admin.auth().verifyIdToken(idToken);
+
+//     // Nur bestehende Admins dürfen andere zu Admins machen
+//     if (!decodedToken.admin) {
+//       return NextResponse.json(
+//         { message: "Forbidden: Admins only" },
+//         { status: 403 }
+//       );
+//     }
+
+//     // Nutzer abrufen
+//     const userRecord = await admin.auth().getUserByEmail(eMail);
+
+//     // Custom Claim setzen
+//     await admin.auth().setCustomUserClaims(userRecord.uid, { admin: true });
+
 //     return NextResponse.json(
-//       { error: "Interner Serverfehler" },
+//       { message: `${eMail} wurde zum Admin gemacht.` },
+//       { status: 200 }
+//     );
+//   } catch (err: any) {
+//     console.error(err);
+//     return NextResponse.json(
+//       { message: err.message || "Internal server error" },
 //       { status: 500 }
 //     );
 //   }
