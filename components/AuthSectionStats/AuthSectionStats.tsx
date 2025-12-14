@@ -10,7 +10,7 @@ const stats = [
   {
     id: 1,
     name: "Mitglieder",
-    stat: "10",
+    stat: "19",
     icon: UsersIcon,
     change: "4",
     changeType: "increase",

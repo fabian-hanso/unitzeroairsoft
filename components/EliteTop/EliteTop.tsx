@@ -6,11 +6,14 @@ export default function EliteTop() {
         <section aria-labelledby="details-heading">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-              Unit Zero <span className="font-semibold text-blue">Elite</span>
+              Unit Zero{" "}
+              <span className="font-semibold text-blue">Alpha Squad</span>
             </h2>
             <p className="mt-6 text-lg/8 text-gray-600">
               Die{" "}
-              <span className="font-bold text-stone-900">Unit Zero Elite</span>{" "}
+              <span className="font-bold text-stone-900">
+                Unit Zero Alpha Squad
+              </span>{" "}
               ist ein interner Trupp, welcher über Truppführer verfügt und klare
               taktische Ziele verfolgt. Mehr Infos werden unten aufgeführt.
             </p>

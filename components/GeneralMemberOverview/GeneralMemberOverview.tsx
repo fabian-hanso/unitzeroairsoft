@@ -7,10 +7,10 @@ import {
 
 const people = [
   {
-    name: "BABA - SIA",
+    name: "FELDKOCH - SIA",
     role: "Gründer",
     imageUrl: "/Sia-Profil.jpg",
-    weapon: "MTW .308",
+    weapon: "MTW .308 / DD MK18",
   },
   {
     name: "AMEX - FABIAN",
@@ -44,13 +44,13 @@ const people = [
   },
   {
     name: "JAN OLIVER",
-    role: "Initiate",
+    role: "Operator",
     imageUrl: "/JanOliver-Profil.jpg",
     weapon: "PHYLAX HPO",
   },
   {
     name: "PASCAL",
-    role: "Initiate",
+    role: "Operator",
     imageUrl: "/Pascal-Profil.jpg",
     weapon: "Wird noch gepflegt",
   },
@@ -62,7 +62,7 @@ const people = [
   },
   {
     name: "OTTI",
-    role: "Initiate",
+    role: "Operator",
     imageUrl: "/Otti-Profil.jpg",
     weapon: "Wird noch gepflegt",
   },
@@ -80,8 +80,44 @@ const people = [
   },
   {
     name: "STEFFEN",
-    role: "Initiate",
+    role: "Operator",
     imageUrl: "/Steffen-Profil.jpg",
+    weapon: "Wird noch gepflegt",
+  },
+  {
+    name: "FREAK - BEN",
+    role: "Operator",
+    imageUrl: "/Placeholder.webp",
+    weapon: "DD MK 18 / MP 7",
+  },
+  {
+    name: "OLI",
+    role: "Operator",
+    imageUrl: "/Placeholder.webp",
+    weapon: "Wird noch gepflegt",
+  },
+  {
+    name: "MAX",
+    role: "Operator",
+    imageUrl: "/Placeholder.webp",
+    weapon: "Wird noch gepflegt",
+  },
+  {
+    name: "PAUL",
+    role: "Operator",
+    imageUrl: "/Placeholder.webp",
+    weapon: "Wird noch gepflegt",
+  },
+  {
+    name: "LEON",
+    role: "Operator",
+    imageUrl: "/Placeholder.webp",
+    weapon: "Wird noch gepflegt",
+  },
+  {
+    name: "LEON II",
+    role: "Operator",
+    imageUrl: "/Placeholder.webp",
     weapon: "Wird noch gepflegt",
   },
   {
@@ -98,12 +134,6 @@ const people = [
   },
   {
     name: "PATRICK",
-    role: "Initiate",
-    imageUrl: "/Placeholder.webp",
-    weapon: "Wird noch gepflegt",
-  },
-  {
-    name: "SEBASTIAN",
     role: "Initiate",
     imageUrl: "/Placeholder.webp",
     weapon: "Wird noch gepflegt",

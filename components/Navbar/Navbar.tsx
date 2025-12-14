@@ -27,9 +27,9 @@ const products = [
     href: "/",
   },
   {
-    name: "Elite-Trupp",
+    name: "Alpha Squad",
     description: "Ein dedizierter und geführter Trupp",
-    href: "/elite",
+    href: "/alphasquad",
   },
 ];
 
@@ -199,6 +199,13 @@ export default function Navbar() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   News
+                </Link>
+                <Link
+                  href="/sponsoren"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  Sponsoren
                 </Link>
                 <Link
                   href="/impressum"

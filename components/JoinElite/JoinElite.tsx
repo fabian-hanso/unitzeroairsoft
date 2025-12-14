@@ -21,10 +21,10 @@ const timeline = [
     dateTime: "2022-02",
   },
   {
-    name: "Aufnahme zur Elite",
+    name: "Aufnahme zum Alpha Squad",
     description:
       "Sollte deine Bewerbung sämtliche Voraussetzungen erfüllen, wirst du nach mehrmaligem Test befördert.",
-    date: "Elite Member",
+    date: "Squad Member",
     dateTime: "2022-12",
   },
 ];
@@ -35,10 +35,10 @@ export default function JoinElite() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-            Dein Weg zur Elite
+            Dein Weg zum Alpha Squad
           </h2>
           <p className="mt-6 text-lg/8 text-white/60 text-left">
-            So wirst du Teil der Unit Zero Elite.
+            So wirst du Teil des Unit Zero Alpha Squads.
           </p>
         </div>
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4 mt-16">
